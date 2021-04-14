@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url("sanitize.css");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;  /*ボックスの横軸を中心揃え*/
+  align-items: center;  /*ボックスの縦軸を中心揃え*/
+  min-height: 100vh;
+  background: #000000;
+  font-family: consolas;
+}
+/* 
+a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #45f3ff;
+  text-transform: uppercase;
+  Letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+a:hover{
+  color: #255784;
+  background: #45f3ff;
+  box-shadow: 0 0 10px #45f3ff, 0 0 40px #45f3ff, 0 0 80px #45f3ff;
+  transition-delay: 1s;
+}
+
+a span{
+  position: absolute;
+  display: block;
+}
+
+a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#45f3ff);
+}
+
+a:hover span:nth-child(1){
+  left:100%;
+  transition: 1s;
+}
+
+a span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#45f3ff);
+}
+
+a:hover span:nth-child(3){
+  right:100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+a span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#45f3ff);
+}
+
+a:hover span:nth-child(2){
+  top:100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+a span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#45f3ff);
+}
+
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+ */
+
+a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #45f3ff;
+  background-color: #031321;
+  text-transform: uppercase;
+  Letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 4px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.9);
+}
+
+
+a:active{
+  color: #255784;
+  background: #45f3ff;
+  box-shadow: 0 0 10px #45f3ff,
+              0 0 40px #45f3ff,
+              0 0 80px #45f3ff;
+  transition-delay: 0;
+}
+
+
+a span{
+  position: absolute;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+
+a span:nth-child(1){
+  animation-name: mymove1;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes mymove1{
+0%{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: 
+  linear-gradient(90deg,transparent,#45f3ff);
+}
+100%{
+  left:100%;
+}
+}
+
+/* -------------------------------------------------------------------------- */
+
+a span:nth-child(3){
+  animation-name: mymove2;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes mymove2{
+0%{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#45f3ff);
+}
+100%{
+  right:100%;
+}
+}
+
+/* -------------------------------------------------------------------------- */
+
+a span:nth-child(2){
+  animation-name: mymove3;
+  animation-duration: 1.0s;
+  animation-delay: 0.25s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes mymove3{
+0%{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#45f3ff);
+}
+100%{
+  top:100%;
+}
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+a span:nth-child(4){
+  animation-name: mymove4;
+  animation-duration: 1s;
+  animation-delay: 0.75s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes mymove4{
+0%{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#45f3ff);
+}
+100%{
+  bottom: 100%;
+}
+}
+
+
+/* -------------------------------------------------------------------------- */
